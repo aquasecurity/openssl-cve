@@ -26,7 +26,7 @@ The following shows Trivy scanning a code repository with OpenSSL 3.0.0 which ha
 
 Some containers include applications that were installed without a package manager. For example, a Dockerfile that builds and copies the binary to the resulting container image.
 When scanning such artifacts, any security scanner will have difficulty identifying the application and its dependencies, but Trivy has an innovative feature that can help.
-It is becoming increasingly common for developers to manage and declare their application's dependencies proactively in an software bill of materials (SBOM) and store it in a common directory, such as [Sigstore](https://sigstore.dev). In this case, Trivy will be able to identify the executable binary during the scan and discover its matching SBOM in Sigstore automatically! We have covered this feature in [this blog post]().
+It is becoming increasingly common for developers to manage and declare their application's dependencies proactively in an software bill of materials (SBOM) and store it in a common directory, such as [Sigstore](https://sigstore.dev). In this case, Trivy will be able to identify the executable binary during the scan and discover its matching SBOM in Sigstore automatically! 
 
 ## Scanning containers in Kubernetes
 
